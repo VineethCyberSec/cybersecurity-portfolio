@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity Portfolio - Vineeth</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+/* Glass container */
+.container {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+p {
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+/* Button */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #00c6ff;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #0072ff;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Cybersecurity Portfolio</h1>
+    <p>By Vineeth | SOC Learner | Freelancer</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>SOC Basics PDF</h3>
+            <p>Beginner-friendly notes covering SOC, SIEM, logs, alerts, and incident lifecycle.</p>
+            <a href="#" target="_blank">View PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Networking Basics PDF</h3>
+            <p>Simple explanation of IP, TCP/UDP, OSI model, ports, and protocols.</p>
+            <a href="#" target="_blank">View PDF</a>
+        </div>
+    </div>
+</div>
+
+<script>
+// Disable right click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable copy
+document.addEventListener('copy', event => {
+    event.preventDefault();
+});
+
+// Disable key shortcuts (Ctrl+C, Ctrl+U, Ctrl+S)
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's')) {
+        e.preventDefault();
+    }
+});
+</script>
+
+</body>
+</html>
